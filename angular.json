@@ -15,7 +15,7 @@
           "options": {
             "index": "src/index.html",
             "outputPath": {
-              "base": "docs/",
+              "base": "docs/bolao-da-firma",
               "browser": ""
             },
             "baseHref": "/bolao-da-firma/",
