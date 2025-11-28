@@ -15,10 +15,9 @@
           "options": {
             "index": "src/index.html",
             "outputPath": {
-              "base": "docs/bolao-da-firma",
+              "base": "docs",
               "browser": ""
             },
-            "baseHref": "/bolao-da-firma/",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
