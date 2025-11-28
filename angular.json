@@ -18,6 +18,7 @@
               "base": "docs",
               "browser": ""
             },
+            "baseHref": "/bolao-da-firma/",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
