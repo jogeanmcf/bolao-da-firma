@@ -1,0 +1,62 @@
+<div class="min-h-screen flex flex-col">
+    <div class="flex-1 bg-green-600"></div>
+    <div class="flex-1 bg-gray-100"></div>
+    <div class="absolute left-1/2 -translate-x-1/2 translate-y-10 shadow-2xl flex flex-col px-4 py-8 gap-y-20 mx-auto rounded-xl bg-white max-w-[600px] w-full">
+        <div>
+            <h1 class="text-2xl text-center text-green-600">
+                Bolão da Mega da Virada
+            </h1>
+            <h2 class="text-xl text-center text-green-600">PLT-IAA</h2>
+        </div>
+
+        <div>
+            <p class="mb-2">Quero participar</p>
+            <div class="relative bg-inherit">
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    class="peer bg-transparent h-10 w-64 rounded-xl text-gray-600 placeholder-transparent ring-2 px-2 ring-gray-600 focus:ring-green-600 focus:outline-none focus:border-rose-600"
+                    placeholder="Type inside me"
+                />
+                <label
+                    for="username"
+                    class="absolute cursor-text left-0 -top-2 text-sm text-gray-600 bg-white mx-1 px-1 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-600 peer-placeholder-shown:top-2 peer-focus:-top-3 peer-focus:text-green-600 peer-focus:text-sm transition-all"
+                >Nome ou apelido</label>
+            </div>
+        </div>
+
+        <button
+            class="text-green-600 rounded-xl pointer-events-auto cursor-pointer"
+            routerLink="/regras"
+        >
+            <div class="flex flex-row justify-center text-green-600">
+                <span class="text-xl mr-1">Veja regras</span>
+                <svg
+                    width="24px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                    </g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M5 12H19M19 12L13 6M19 12L13 18"
+                            stroke="oklch(62.7% 0.194 149.214)"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                        </path>
+                    </g>
+                </svg>
+            </div>
+        </button>
+    </div>
+</div>

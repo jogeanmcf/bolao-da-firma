@@ -1,59 +1,19 @@
-# BolaoDaEmpresa
+🎲 Bolão da Firma - Mega da Virada! 💰
+E aí, galera! Vamos tentar a sorte grande neste fim de ano? As regras do nosso bolão da Mega da Virada são simples:
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3.
+❓ Como a gente joga?
+Aposta: Cada participante terá 2 jogos de 7 números.
 
-## Development server
+Seus números: Você pode escolher seus 7 números ou deixar que o sistema da lotérica gere eles no automático (aquela Surpresinha básica!).
 
-To start a local development server, run:
+💰 Quanto custa e como pagar?
+Valor da Cota: A participação custa R$ 84,00 por pessoa (esse valor cobre o custo exato das suas duas apostas de 7 números).
 
-```bash
-ng serve
-```
+Prazo Final: O pagamento deve ser feito antecipado, até o dia 16/dez (sábado).
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Como Pagar: Mande seu PIX de R$ 84,00 para o nosso Tesoureiro Oficial: [Jogean]. Sem pagamento, sem jogo, ok?
 
-## Code scaffolding
+🗓️ Datas Importantes
+Registro dos Jogos: O Jogean vai registrar todas as apostas no dia 17/dez (domingo).
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Seu Comprovante: A partir do dia 17/dez, você receberá a foto/cópia do seu bilhete oficial da lotérica. Guarde bem o seu!

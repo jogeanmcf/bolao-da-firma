@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@layer theme, base, components, utilities;
+@import "./theme.css" layer(theme);
+
+/* @import "./preflight.css" layer(base);
+@import "./utilities.css" layer(utilities); */
+
+@layer base {
+  button {
+    @apply cursor-pointer;
+  }
+}
