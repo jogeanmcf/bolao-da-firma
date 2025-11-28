@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bolao-da-empresa": {
+    "bolao-da-firma": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,12 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "browser": "src/main.ts",
+            "index": "src/index.html",
+            "outputPath": {
+              "base": "docs/",
+              "browser": ""
+            },
+            "baseHref": "/bolao-da-firma/",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -53,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "bolao-da-empresa:build:production"
+              "buildTarget": "bolao-da-firma:build:production"
             },
             "development": {
-              "buildTarget": "bolao-da-empresa:build:development"
+              "buildTarget": "bolao-da-firma:build:development"
             }
           },
           "defaultConfiguration": "development"

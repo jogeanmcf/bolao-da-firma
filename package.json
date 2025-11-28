@@ -1,12 +1,13 @@
 {
-  "name": "bolao-da-empresa",
+  "name": "bolao-da-firma",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build-gh-pages": "ng build && rm -rf docs && mkdir docs && cp -r dist/bolao-da-firma/browser/* docs"
   },
   "prettier": {
     "printWidth": 100,
