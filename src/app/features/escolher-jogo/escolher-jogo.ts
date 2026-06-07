@@ -7,7 +7,7 @@ import { GoogleSheetsService } from "../../core/services/google-sheets.service";
   selector: 'app-escolher-jogo',
   imports: [RouterLink],
   template: `
-    <div class="min-h-screen bg-linear-to-b from-green-700 to-green-800 px-4 py-8 relative">
+    <div class="min-h-screen bg-linear-to-b from-purple-700 to-purple-800 px-4 py-8 relative">
       @if(isLoading) {
         <div class="absolute inset-0 z-50 bg-black/20 cursor-wait"></div>
       }
@@ -15,7 +15,7 @@ import { GoogleSheetsService } from "../../core/services/google-sheets.service";
         <div>
           <button 
             routerLink="/regras"
-            class="inline-flex hover:text-green-200 gap-2 text-white"
+            class="inline-flex hover:text-purple-200 gap-2 text-white"
           >
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
@@ -29,8 +29,8 @@ import { GoogleSheetsService } from "../../core/services/google-sheets.service";
 
       <div class="flex flex-col gab-4 px-4 py-8 gap-4 bg-white max-w-4xl mx-auto rounded-xl ">
             <!-- Jogo 1 -->
-            <div class="p-4 bg-linear-90 from-green-50 to-white rounded-xl border-2 border-green-600 shadow-lg">
-              <h2 class="text-green-600 font-bold text-2xl">Jogo #1</h2>
+            <div class="p-4 bg-linear-90 from-purple-50 to-white rounded-xl border-2 border-purple-600 shadow-lg">
+              <h2 class="text-purple-600 font-bold text-2xl">Jogo #1</h2>
               <div class="flex flex-col gap-4">
                 <div class="inline-flex gap-2">
                   <input type="radio" id="jogo-1-aleatorio" (click)="toggleChoicesOne(true)"
@@ -55,7 +55,7 @@ import { GoogleSheetsService } from "../../core/services/google-sheets.service";
                       (click)="getChoicesOne(number)"
                       [attr.aria-disabled]="choicesOne.length >= 7 && !choicesOne.includes(number)"
                       [class.opacity-50]="choicesOne.length >= 7 && !choicesOne.includes(number)"
-                      [class]="choicesOne.includes(number) ? 'bg-green-600 text-white' : 'bg-green-200 text-green-600'"
+                      [class]="choicesOne.includes(number) ? 'bg-purple-600 text-white' : 'bg-purple-200 text-purple-600'"
                       class="flex h-10 w-10 items-center justify-center rounded-full transition"
                     >
                       <span class="font-bold">{{number}}</span>
@@ -69,8 +69,8 @@ import { GoogleSheetsService } from "../../core/services/google-sheets.service";
             </div>
 
             <!-- Jogo 2 -->
-            <div class="p-4 bg-linear-90 from-green-50 to-white rounded-xl border-2 border-green-600 shadow-lg">
-              <h2 class="text-green-600 font-bold text-2xl">Jogo #2</h2>
+            <div class="p-4 bg-linear-90 from-purple-50 to-white rounded-xl border-2 border-purple-600 shadow-lg">
+              <h2 class="text-purple-600 font-bold text-2xl">Jogo #2</h2>
               <div class="flex flex-col gap-4">
                 <div class="inline-flex gap-2">
                   <input type="radio" id="jogo-2-aleatorio" (click)="toggleChoicesTwo(true)"
@@ -95,7 +95,7 @@ import { GoogleSheetsService } from "../../core/services/google-sheets.service";
                       (click)="getChoicesTwo(number)"
                       [attr.aria-disabled]="choicesTwo.length >= 7 && !choicesTwo.includes(number)"
                       [class.opacity-50]="choicesTwo.length >= 7 && !choicesTwo.includes(number)"
-                      [class]="choicesTwo.includes(number) ? 'bg-green-600 text-white' : 'bg-green-200 text-green-600'"
+                      [class]="choicesTwo.includes(number) ? 'bg-purple-600 text-white' : 'bg-purple-200 text-purple-600'"
                       class="flex h-10 w-10 items-center justify-center rounded-full transition"
                     >
                       <span class="font-bold">{{number}}</span>
@@ -118,7 +118,7 @@ import { GoogleSheetsService } from "../../core/services/google-sheets.service";
               (ticketOneIsRandom || choicesOne.length == 7) && 
               (ticketTwoIsRandom || choicesTwo.length == 7)
             )"
-            class="inline-flex items-center justify-center w-full bg-green-600 text-white font-bold py-4 rounded-xl hover:bg-green-700 transition-colors shadow-lg disabled:opacity-70 disabled:cursor-not-allowed"
+            class="inline-flex items-center justify-center w-full bg-purple-600 text-white font-bold py-4 rounded-xl hover:bg-purple-700 transition-colors shadow-lg disabled:opacity-70 disabled:cursor-not-allowed"
             [class.opacity-50]="!(
               (ticketOneIsRandom || choicesOne.length == 7) && 
               (ticketTwoIsRandom || choicesTwo.length == 7)
