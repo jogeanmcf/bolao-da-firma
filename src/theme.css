@@ -1,3 +1,17 @@
 @theme {
-    --color-meaga-500: "#209869";
+  --color-meaga: #209869;
+
+  --color-quina-50: #f1ebfe;
+  --color-quina-100: #dccffc;
+  --color-quina-200: #b297f7;
+  --color-quina-300: #835aed;
+  --color-quina-400: #531fd6;
+  --color-quina-500: #260085;
+  --color-quina-600: #1e006b;
+  --color-quina-700: #170052;
+  --color-quina-800: #100038;
+  --color-quina-900: #0a0024;
+  --color-quina-950: #060014;
+
+  --color-quina: var(--color-quina-500);
 }
