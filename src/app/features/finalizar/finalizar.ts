@@ -7,11 +7,11 @@ import { Router, RouterLink } from '@angular/router';
   standalone: true,
   imports: [],
   template: `
-    <div class="min-h-screen bg-linear-to-b from-green-700 to-green-800 p-6 flex items-center">
+    <div class="min-h-screen bg-linear-to-b from-quina-700 to-quina-800 p-6 flex items-center">
       <div class="p-8 flex flex-col gap-4 max-w-3xl w-full mx-auto bg-white rounded-2xl shadow-xl ring-1 ring-black/5 overflow-hidden">
-        <h1 class="text-2xl font-bold text-green-700">É hora do PIX</h1>
+        <h1 class="text-2xl font-bold text-quina-700">É hora do PIX</h1>
         <p class="text-gray-600">Agora é só fazer o PIX e contar com a sorte! 🍀</p>
-        <p class="text-md text-gray-500 mt-2 text-center">Valor: <span class="font-medium text-gray-700">R$ 84,00</span></p>
+        <p class="text-md text-gray-500 mt-2 text-center">Valor: <span class="font-medium text-gray-700">R$ 31,50</span></p>
         <div class="flex flex-col gap-6 justify-around items-center md:flex-row">
           <div class="flex flex-col items-center md:items-start gap-4">
             
@@ -23,7 +23,7 @@ import { Router, RouterLink } from '@angular/router';
                 type="button"
                 (click)="copyCode()"
                 aria-live="polite"
-                class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-lg shadow transition"
+                class="inline-flex items-center gap-2 bg-quina-600 hover:bg-quina-700 text-white font-medium px-4 py-2 rounded-lg shadow transition"
               >
               @if(copied){
                 <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -47,23 +47,23 @@ import { Router, RouterLink } from '@angular/router';
 
           <div class="flex flex-col items-center gap-4">
             <span class="text-sm text-gray-500">Ou escaneie o QR code</span>
-            <img src="assets/qr-code.jpeg" alt="QR code" class="w-56 h-56 rounded-lg shadow-md object-cover"/>
+            <img src="assets/qr-code-quina.jpeg" alt="QR code" class="w-56 h-56 rounded-lg shadow-md object-cover"/>
           </div>
         </div>
       </div>
     </div>
   `,
 })
-export class Finalizar implements OnInit, OnDestroy{
+export class Finalizar implements OnInit, OnDestroy {
   copied = false;
   private popStateHandler = (ev: PopStateEvent) => {
     // when user hits browser back from this component, redirect to /bem-vindo
     this.router.navigate(['bem-vindo']);
   };
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
   copyCode(): void {
-    const code = '00020126600014br.gov.bcb.pix0114+55619932541510220Bolao Mega da Virada520400005303986540584.005802BR5925JOGEAN MATHEUS CARVALHO F6008BRASILIA62290525nAsIBqvoHPmZzLwVSTjHrnBr563043B2E';
+    const code = '00020126720014br.gov.bcb.pix0114+55619932541510232Bolao_PLTIAA_-_Quina_de_Sao_Joao520400005303986540531.505802BR5925JOGEAN_MATHEUS_CARVALHO_F6008BRASILIA62290525VNs0twpG2FjquhEWcPMBEUsSO63046EA4';
     this.copied = true
     // preferred modern API
     if (navigator?.clipboard?.writeText) {
@@ -104,4 +104,4 @@ export class Finalizar implements OnInit, OnDestroy{
   ngOnDestroy(): void {
     window.removeEventListener('popstate', this.popStateHandler);
   }
- }
+}
