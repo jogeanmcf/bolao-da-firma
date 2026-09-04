@@ -63,7 +63,7 @@ export class Finalizar implements OnInit, OnDestroy {
 
   constructor(private router: Router) { }
   copyCode(): void {
-    const code = '00020101021226850014br.gov.bcb.pix2563qrcodepix.bb.com.br/pix/v2/1f82c579-1b8c-432e-a523-3f73026decf4520400005303986540528.005802BR5925JOGEAN_MATHEUS_CARVALHO_F6008BRASILIA62070503***63044A9C';
+    const code = '00020126700014br.gov.bcb.pix0114+55619932541510230Bolao_da_Independencia-PLT_IAA520400005303986540528.005802BR5925JOGEAN_MATHEUS_CARVALHO_F6008BRASILIA62290525AnSd8aFeqX4j7EZ9sQT5xKvFp63042867';
     this.copied = true
     // preferred modern API
     if (navigator?.clipboard?.writeText) {
