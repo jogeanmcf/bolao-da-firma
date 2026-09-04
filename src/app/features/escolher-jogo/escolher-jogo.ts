@@ -82,7 +82,7 @@ import { GoogleSheetsService } from "../../core/services/google-sheets.service";
           <div class="flex flex-col">
             <span class="font-bold text-gray-900 text-lg">Quero escolher os números</span>
             @if(wannaChooseNumbers){
-              <span class="text-sm text-gray-500">⚠️ Até o dia do registro das apostas procure o Jogean para informar seus números da sorte, isso deve ser feito até o dia 23/jun.</span>
+              <span class="text-sm text-gray-500">⚠️ Até o dia do registro das apostas procure o Jogean para informar seus números da sorte, isso deve ser feito até o dia 08/set.</span>
             }
           </div>
         </label>
