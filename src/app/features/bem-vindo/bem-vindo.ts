@@ -11,7 +11,7 @@ import { StateService } from "../../core/services/state.service";
     <div class="min-h-screen flex flex-col relative">
       <!-- Background split -->
       <div class="absolute inset-0 pointer-events-none">
-        <div class="h-1/2 bg-quina-500"></div>
+        <div class="h-1/2 bg-lotofacil-500"></div>
         <div class="h-1/2 bg-gray-100"></div>
       </div>
 
@@ -20,8 +20,8 @@ import { StateService } from "../../core/services/state.service";
         <div class="bg-white rounded-2xl shadow-2xl w-full max-w-md p-8 space-y-8">
           <!-- Header -->
           <div class="text-center space-y-2">
-            <h1 class="text-3xl font-bold text-quina-600">
-              Bolão da Quina de São João
+            <h1 class="text-3xl font-bold text-lotofacil-600">
+              Bolão Lotofácil da Independência
             </h1>
             <h2 class="text-lg font-semibold text-gray-600">PLT-IAA</h2>
           </div>
@@ -39,13 +39,13 @@ import { StateService } from "../../core/services/state.service";
                 name="username"
                 [(ngModel)]="username"
                 placeholder="Digite seu nome ou apelido"
-                class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 text-gray-700 placeholder-gray-400 focus:border-quina-600 focus:outline-none transition-colors"
+                class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 text-gray-700 placeholder-gray-400 focus:border-lotofacil-600 focus:outline-none transition-colors"
               />
             </div>
             <button
               [disabled]="this.username == null || this.username == ''"
               [class.opacity-70]="this.username== ''"
-              class="inline-flex items-center justify-center w-full bg-quina-600 text-white font-bold py-3 rounded-xl hover:bg-quina-700 transition-colors shadow-lg"
+              class="inline-flex items-center justify-center w-full bg-lotofacil-600 text-white font-bold py-3 rounded-xl hover:bg-lotofacil-700 transition-colors shadow-lg"
               (click)="goToRules()"
             >
               <span>Veja as regras</span>
