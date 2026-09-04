@@ -14,4 +14,17 @@
   --color-quina-950: #060014;
 
   --color-quina: var(--color-quina-500);
+
+
+  --color-lotofacil-50: #fdf2f8;
+  --color-lotofacil-100: #fbe8f6;
+  --color-lotofacil-200: #f7d0ee;
+  --color-lotofacil-300: #f0a7e0;
+  --color-lotofacil-400: #e271cb;
+  --color-lotofacil-500: #930989;
+  --color-lotofacil-600: #7b0773;
+  --color-lotofacil-700: #66055f;
+  --color-lotofacil-800: #55044f;
+  --color-lotofacil-900: #460441;
+  --color-lotofacil-950: #2b0229;
 }

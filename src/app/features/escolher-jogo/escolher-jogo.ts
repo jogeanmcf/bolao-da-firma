@@ -7,7 +7,7 @@ import { GoogleSheetsService } from "../../core/services/google-sheets.service";
   selector: 'app-escolher-jogo',
   imports: [RouterLink],
   template: `
-    <div class="min-h-screen bg-linear-to-b from-quina-700 to-quina-800 px-4 py-8 relative">
+    <div class="min-h-screen bg-linear-to-b from-lotofacil-700 to-lotofacil-800 px-4 py-8 relative">
       @if(isLoading) {
         <div class="absolute inset-0 z-50 bg-black/20 cursor-wait"></div>
       }
@@ -15,7 +15,7 @@ import { GoogleSheetsService } from "../../core/services/google-sheets.service";
         <div>
           <button 
             routerLink="/regras"
-            class="inline-flex hover:text-quina-200 gap-2 text-white"
+            class="inline-flex hover:text-lotofacil-200 gap-2 text-white"
           >
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
@@ -33,10 +33,10 @@ import { GoogleSheetsService } from "../../core/services/google-sheets.service";
         <!-- Opção 1: Surpresinha -->
         <label 
           class="flex items-center gap-4 p-4 rounded-xl border-2 transition-all cursor-pointer select-none"
-          [class.border-quina-600]="wannaChooseNumbers === false"
-          [class.bg-quina-50]="wannaChooseNumbers === false"
+          [class.border-lotofacil-600]="wannaChooseNumbers === false"
+          [class.bg-lotofacil-50]="wannaChooseNumbers === false"
           [class.border-gray-200]="wannaChooseNumbers !== false"
-          [class.hover:border-quina-300]="wannaChooseNumbers !== false"
+          [class.hover:border-lotofacil-300]="wannaChooseNumbers !== false"
         >
           <input 
             type="radio" 
@@ -47,9 +47,9 @@ import { GoogleSheetsService } from "../../core/services/google-sheets.service";
           />
           <!-- Radio Indicator -->
           <div class="w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all shrink-0"
-               [class.border-quina-600]="wannaChooseNumbers === false"
+               [class.border-lotofacil-600]="wannaChooseNumbers === false"
                [class.border-gray-300]="wannaChooseNumbers !== false">
-            <div class="w-3 h-3 rounded-full bg-quina-600 transition-all transform scale-0"
+            <div class="w-3 h-3 rounded-full bg-lotofacil-600 transition-all transform scale-0"
                  [class.scale-100]="wannaChooseNumbers === false"></div>
           </div>
           <div class="flex flex-col">
@@ -60,10 +60,10 @@ import { GoogleSheetsService } from "../../core/services/google-sheets.service";
         <!-- Opção 2: Escolher Números -->
         <label 
           class="flex items-center gap-4 p-4 rounded-xl border-2 transition-all cursor-pointer select-none"
-          [class.border-quina-600]="wannaChooseNumbers === true"
-          [class.bg-quina-50]="wannaChooseNumbers === true"
+          [class.border-lotofacil-600]="wannaChooseNumbers === true"
+          [class.bg-lotofacil-50]="wannaChooseNumbers === true"
           [class.border-gray-200]="wannaChooseNumbers !== true"
-          [class.hover:border-quina-300]="wannaChooseNumbers !== true"
+          [class.hover:border-lotofacil-300]="wannaChooseNumbers !== true"
         >
           <input 
             type="radio" 
@@ -74,15 +74,15 @@ import { GoogleSheetsService } from "../../core/services/google-sheets.service";
           />
           <!-- Radio Indicator -->
           <div class="w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all shrink-0"
-               [class.border-quina-600]="wannaChooseNumbers === true"
+               [class.border-lotofacil-600]="wannaChooseNumbers === true"
                [class.border-gray-300]="wannaChooseNumbers !== true">
-            <div class="w-3 h-3 rounded-full bg-quina-600 transition-all transform scale-0"
+            <div class="w-3 h-3 rounded-full bg-lotofacil-600 transition-all transform scale-0"
                  [class.scale-100]="wannaChooseNumbers === true"></div>
           </div>
           <div class="flex flex-col">
             <span class="font-bold text-gray-900 text-lg">Quero escolher os números</span>
             @if(wannaChooseNumbers){
-              <span class="text-sm text-gray-500">⚠️ Até o dia do registro das apostas procure o Jogean para informar seus números da sorte, isso deve ser feito até o dia 23/jun.</span>
+              <span class="text-sm text-gray-500">⚠️ Até o dia do registro das apostas procure o Jogean para informar seus números da sorte, isso deve ser feito até o dia 08/set.</span>
             }
           </div>
         </label>
@@ -93,7 +93,7 @@ import { GoogleSheetsService } from "../../core/services/google-sheets.service";
         <button
           [disabled]="isLoading || wannaChooseNumbers === null"
           (click)="submit()"
-          class="inline-flex items-center justify-center w-full bg-quina-600 text-white font-bold py-4 rounded-xl hover:bg-quina-700 transition-colors shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+          class="inline-flex items-center justify-center w-full bg-lotofacil-600 text-white font-bold py-4 rounded-xl hover:bg-lotofacil-700 transition-colors shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
         >
           @if(isLoading) {
             <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
