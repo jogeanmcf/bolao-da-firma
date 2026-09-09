@@ -7,7 +7,7 @@ import { Finalizar } from './features/finalizar/finalizar';
 import { ApostasEncerradas } from './features/apostas-encerradas/apostas-encerradas';
 
 export const routes: Routes = [
-    // { path: '', redirectTo: 'bem-vindo', pathMatch: 'full' },
+    { path: '', redirectTo: 'apostas-encerradas', pathMatch: 'full' },
     // { path: 'bem-vindo', component: BemVindo },
     // { path: 'regras', component: VejaRegras },
     // { path: 'escolher-numeros', component: EscolherJogo },
